@@ -2,24 +2,31 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-const App=() =>{
-  const myName="UDHESHKUMAR C";
-  const myAge=19;
-  React.useEffect(()=>{
-    alert("Hi Udheshkumar C");
-    console.log('My age is ${myAge}');
-   },[]);
-}
 
 function App() {
-  const [count, setCount] = useState(0)
+  alert("My name is UDHESHKUMAR C");
+  function nanthan() {
+    console.log("vanakam");
+  }
 
+  const summa =()=>{
+  console.log("enna panringa inga");
+  }
+  const name={
+    name:"UDHESHKUMAR C",
+    age:18,
+  };
+  console.log("age="+name.age);
   return (
-    <>
-      <h1 style={{textAlign:"center",color:"cyan"}}>UDHESHKUMAR C</h1>
-        
-    </>
-  )
+    
+    <div className='screen'>
+    <h1>name:{name.name}</h1>
+    <button onClick={nanthan}>press me</button>
+    <button onClick={()=>console.log("nalaiku college bro")}> click me </button>
+    <button onClick={summa}> just touch </button>  
+     </div> 
+  );
 }
 
-export default App;
+export default App
+
